@@ -108,3 +108,12 @@
 // })(32, 16);
 // console.log(res)
                                     // СТРЕЛОЧННЫЕ ФУНКЦИИ
+function sayHi (name) {
+    console.log(`Привет, ${name}! Как твои дела?`);
+}                                   
+sayHi('Antonio')
+                                    // Пример: стрелочной функции
+const arrsayHi = (name) => {
+    console.log(`Привет, ${name}! Как твои дела?`);
+}
+sayHi('Antonio')
