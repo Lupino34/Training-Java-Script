@@ -108,12 +108,76 @@
 // })(32, 16);
 // console.log(res)
                                     // СТРЕЛОЧННЫЕ ФУНКЦИИ
-function sayHi (name) {
-    console.log(`Привет, ${name}! Как твои дела?`);
-}                                   
-sayHi('Antonio')
-                                    // Пример: стрелочной функции
-const arrsayHi = (name) => {
-    console.log(`Привет, ${name}! Как твои дела?`);
-}
-sayHi('Antonio')
+// function sayHi (name) {
+//     console.log(`Привет, ${name}! Как твои дела?`);
+// }                                   
+// sayHi('Antonio')
+//                                     // Пример: стрелочной функции
+// const arrsayHi = (name) => {
+//     console.log(`Привет, ${name}! Как твои дела?`);
+// }
+// sayHi('Antonio')
+                                        // Пример 2
+// const sayHi2 = (name) => console.log(`Привет, ${name}! Как твои дела?`);
+
+// sayHi2('Vladislav');
+//                                         // Пример 2
+// function summ(a, b) {
+//     const result = a + b;
+// };
+
+// const summ = (a, b) => {
+//     return a + b;
+// };
+// // const summ = (a, b) => a + b; --- Короткий вид записи
+
+// const res = summ(16, 78);
+// console.log(res)
+                                        // МАССИВЫ
+// const autobrand1 = 'BMW';
+// const autobrand2 = 'Mazda';
+// const autobrand3 = 'KIA';
+// const autobrand4 = 'Audi';
+
+// const autobrands = ['BMW', 'Mazda', 'KIA', 'Audi'];
+
+// console.log(autobrands)
+// console.log(autobrands[2])
+                                        // Методы массивов
+// const auto = ['VAZ', 'AYDI', 'BNW']
+// // добаление элемента в массив
+// auto.push('KIA'); 
+// // добавление элемента в начало массива
+// auto.unshift('Ferarri');
+// // удаление масива (2 - индекс, 1 - кол-во эл-тов)
+// auto.splice(2, 1)
+// console.log(auto)
+// // длина массива
+// console.log(auto.length) 
+                                    // ЦИКЛЫ
+
+// console.log('Start')                                   
+// for (let i = 0; i < 10 ; i++ ) {
+//     console.log(i);
+
+// }
+
+// console.log('finish')
+
+
+// console.log('Start')                                   
+// for (let i = 0; i < 10 ; i = i + 2 ) {
+//     console.log(i);
+
+// }
+
+// console.log('finish')
+
+// console.log('Start')                                   
+// for (let i = 0; i <= 10 ; i = i + 3 ) {
+//     console.log(i);
+
+// }
+
+// console.log('finish')
+                        // Обход массива циклом for
