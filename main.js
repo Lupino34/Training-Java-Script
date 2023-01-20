@@ -181,3 +181,128 @@
 
 // console.log('finish')
                         // Обход массива циклом for
+// const autoBrands = ['Vaz', 'Mersedes', 'Bmw', 'Toyta', 'Moskvich'];
+// console.log(autobrands[0]);
+// console.log(autobrands[1]);
+// console.log(autobrands[2]);
+// console.log(autobrands[3]);
+// console.log(autobrands[4]);
+
+// for (i = 0; i < 5; i++) {
+//     console.log(autoBrands[i])
+// }
+
+// const autoBrands = ['Vaz', 'Mersedes', 'Bmw', 'Toyta', 'Moskvich'];
+// console.log(autobrands[0]);
+// console.log(autobrands[1]);
+// console.log(autobrands[2]);
+// console.log(autobrands[3]);
+// console.log(autobrands[4]);
+
+// for (i = 0; i < autoBrands.length; i++) {
+//     console.log(autoBrands[i]);
+// }
+                       
+//                         Обход массива методом forEach
+// const autoBrands = ['Vaz', 'Mersedes', 'Bmw', 'Toyta', 'Moskvich'];
+
+// autoBrands.forEach(function (item) {
+//     console.log(item)
+// })
+
+// const autoBrands = ['Vaz', 'Mersedes', 'Bmw', 'Toyta', 'Moskvich'];
+
+// autoBrands.forEach(function (item, index) {
+//     console.log(`${item} => ${index}`);
+// })
+
+// const autoBrands = ['Vaz', 'Mersedes', 'Bmw', 'Toyta', 'Moskvich'];
+
+// autoBrands.forEach(function (brands, i ) {
+//     console.log(`${brands} => ${i}`);
+// })
+//                         // Пример 1
+
+// autoBrands.forEach(printBrand);
+
+// function printBrand (brand, i) {
+//     console.log(`${brand} => ${i}`);
+//}                
+
+// autoBrands.forEach((brand, i) => console.log(`${brand} => ${i}`));
+                                    // ОБЬЕКТЫ
+// let userName = 'Vlad';
+// let age = 35;
+// let isMarried = false;
+
+// const person = {
+//     userName: 'Vlad',
+//     age: 35,
+//     isMarried: false,
+//     profession: 'developer'
+
+
+// }
+// console.log(person);
+// console.log(person.userName);
+
+// let propetyName = 'developer';
+// console.log(person[propetyName]);
+
+// const person = {
+//         userName: 'Vlad',
+//         age: 35,
+//         isMarried: false,
+       
+// }
+// console.log(person)
+
+// person.profession = ' JS developer';
+// console.log(person)
+
+// delete person.age;
+// console.log(person)
+                                // МЕТОДЫ В ОБЬЕКТАХ
+
+// const person = {
+//         userName: 'vladislav',
+//         age: 35,
+//         isMarried: false,
+//         sayHi: function(name) {
+//                 console.log(`Привет, ${name}!`);
+//         }
+// };
+
+// // person.sayHi()
+
+
+
+// // person.sayHi = function (name) {
+// //         console.log(`Привет, ${name}!`);
+// // }
+
+// person.sayHi('Antonio')
+                                        // КЛЮЧЕВОЕ СЛОВА THIS
+// const person = {
+//         userName: 'vladislav',
+//         age: 35,
+//         isMarried: false,
+//         sayHi: function(name) {
+//                 console.log(`Привет, ${name}! Меня зовут ${person.userName}`);
+//         }
+// };
+
+// person.sayHi('Antonio')         
+
+// 2.                          Использование слова this внутри методов обьекта
+// const person = {
+//         userName: 'Vladislav',
+//         age: 35,
+//         isMarried: false,
+//         sayHi: function(name) {
+//                 console.log(this);
+//                 console.log(`Привет, ${name}! Меня зовут ${this.userName}`);
+//         }
+// };
+
+// person.sayHi('Antonio')   
