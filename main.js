@@ -396,7 +396,7 @@
 // console.log(getHax(12, 8));
 // console.log(getHax(-9, 8));      
 
-                            // 
+                            // Создал Секундомер
 const counterElement = document.querySelector('#counter')                            
 let counter = 0;
 let timerID;
