@@ -306,3 +306,135 @@
 // };
 
 // person.sayHi('Antonio')   
+                                // ОБЬЕКТЫ ОБХОД ЦИКЛОМ for in (НЕ ПУТАТЬ С for of)
+// const person = {
+//         userName: 'vladislav',
+//         age: 35,
+//         isMarried: false,
+//         sayHi: function(userName) {
+//                 console.log(`Привет, ${userName}! Меня зовут ${person.userName}`);
+//         }
+// };
+// // В отличии от for ... of -  for... in может освободить неитерируемые обьекты и возвращают ключи.
+// for (let key in person) {
+//     // console.log(key);
+//     console.log(key, ':', person[key] );
+// }
+                                    // КЛАССЫ. КОНСТРУКТОРЫ ОБЬЕКТОВ    
+// const person1 = {
+//         userName: 'vladislav',
+//         age: 35,
+//         isMarried: false,
+//         sayHi: function(userName) {
+//                 console.log(`Привет, ${userName}! Меня зовут ${person.userName}`);
+//         }
+// };
+// const person2 = {
+//         userName: 'Anton',
+//         age: 30,
+//         isMarried: true,
+//         sayHi: function(userName) {
+//                 console.log(`Привет, ${userName}! Меня зовут ${person.userName}`);
+//         }
+// };
+
+// class Person {
+//     constructor (userName, age, isMarried) {
+//         this.userName = userName;
+//         this.age = age;
+//         this.isMarried = isMarried;
+//     }
+
+// }
+
+// const person1 = new Person('Vladislav', 35, false);
+// const person2 = new Person('Anton', 30, true);
+// const person3 = new Person('Olga', 39, true)
+// console.log(person1);
+// console.log(person2);
+// console.log(person3);
+// console.log(person1, person2, person3)
+
+                                    //  Условные конструкции, циклы
+// let i = 0;
+// while (i <= 30) {
+//     console.log(i);
+//     i++
+// }
+
+// let names = ['Vlad', 'Anton', 'Misha', 'Masha', 'Grisha'];
+// for (let i = 0; i < names.length; i++)
+// console.log(names[i]) 
+                                // ЗАДАЧА - ВЫВЕСТИ АВТОРА И ЕГО ПРОИЗВЕДЕНИЕ
+// let book = [
+//     {author: 'Айзек Азимов', title: 'Я робот'},
+//     {author: 'Роберт Хайлайн', title:'Звездый десант'},
+//     {author: 'Герберт Уэлс', title:'Война миров'},
+// ]      
+// for (let i = 0; i < book.length; i++) {
+//     let books = book[i];
+//     // console.log(books)
+//     // console.log(`Автор: ${books.author} - ${books.title}`)
+//     // console.log(`${i} Автор: ${books.author} - ${books.title}`)
+//     console.log(`${i + 1}) Автор: ${books.author} - ${books.title}`)
+
+// }   
+                                        // ФУНКЦИИ И   fetch
+                                        //Задача - написать функцию возвращающию число из двух переданых                                     
+// function getHax(a, b) {
+//     if(a > b){
+//         return a;
+//     } else {
+//         return b;
+
+//     }
+// }
+
+// let max = getHax(28, 19);
+// console.log(max)
+
+// console.log(getHax(12, 8));
+// console.log(getHax(-9, 8));      
+
+                            // 
+const counterElement = document.querySelector('#counter')                            
+let counter = 0;
+let timerID;
+
+// }
+
+// setInterval(function(){
+//     // counter = counter + 1;
+//     // counter += 1;
+//     counter++
+
+//     // console.log(counter)
+//     counterElement.innerText = counter;
+// }, 1000)
+
+                // кнопка start
+const btnStart = document.querySelector('#start');
+btnStart.onclick = function () {
+    console.log('btnStart');
+    timerID = setInterval(function(){
+        counter++;
+       
+        counterElement.innerText = counter;
+    }, 1000)
+
+}
+                // кнопка пауза
+const btnPause = document.querySelector('#pause');
+btnPause.onclick = function () {
+    console.log('btnPause')
+    clearInterval(timerID);
+
+}
+                // кнопка сброс
+const btnReset = document.querySelector('#reset');
+btnReset.onclick = function () {
+    console.log('btnReset')
+    counter = 0;
+    counterElement.innerText = counter;
+    clearIntervalInterval(timerID)
+}           
